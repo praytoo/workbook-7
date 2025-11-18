@@ -1,0 +1,1 @@
+N5. Slow Shipping Detection Management asks: “Where are we slow in shipping?” Create a report that, for each ship country, shows the average delay between OrderDate and ShippedDate (you may ignore orders that haven’t shipped yet). Only show countries with a noticeably higher average delay than others.

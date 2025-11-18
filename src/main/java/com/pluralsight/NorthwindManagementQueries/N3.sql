@@ -1,0 +1,1 @@
+N3. Employee Order Load Management asks: “Are any sales reps overloaded compared to the others?” Create a report per employee that shows their full name and how many orders they handled. Only show employees whose number of orders is above the overall average number of orders per employee.

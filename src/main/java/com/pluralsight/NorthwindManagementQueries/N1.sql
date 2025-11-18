@@ -1,0 +1,1 @@
+N1. Product Performance Snapshot Management asks: “Which products are clearly underperforming? Give us a list of products that are in stock but rarely ordered.” Create a report that shows each product’s name, units in stock, and how many times it appears in order_details, and filter it so that only products with plenty of stock but very few orders appear.

@@ -1,0 +1,1 @@
+N2. High-Value Countries Management asks: “For which countries are we shipping a lot of value?” Create a report per ship country that shows the number of orders and the total freight for that country, but only include countries that clearly stand out as strong markets.
