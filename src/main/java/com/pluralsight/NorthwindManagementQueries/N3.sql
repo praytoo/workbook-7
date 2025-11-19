@@ -1,4 +1,18 @@
 N3. Employee Order Load Management asks: “Are any sales reps overloaded compared to the others?” Create a report per employee that shows their full name and how many orders they handled. Only show employees whose number of orders is above the overall average number of orders per employee.
+**correction
+SELECT e.firstname, e.lastname, e.EmployeeID, SUM(od.quantity), COUNT(o.orderID) AS totalOrders
+FROM northwind.employees AS e
+JOIN northwind.orders AS o
+ON e.employeeID = o.employeeID
+JOIN northwind.`order details` AS od
+ON o.orderID = od.OrderID
+GROUP BY e.firstname, e.lastname, e.EmployeeID
+HAVING totalOrders > 250
+i. Nancy	Davolio	1	7812	345
+   Janet	Leverling	3	7852	321
+   Margaret	Peacock	4	9798	420
+   Laura	Callahan	8	5913	260
+---------
 SELECT e.firstname, e.lastname, e.EmployeeID, o.orderID, od.quantity
 FROM northwind.employees AS e
 JOIN northwind.orders AS o
