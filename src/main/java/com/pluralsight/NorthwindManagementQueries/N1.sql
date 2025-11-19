@@ -2,38 +2,6 @@ N1. Product Performance Snapshot Management asks: “Which products are clearly 
 SELECT p.unitsinstock, od.Quantity, p.ProductName
 FROM northwind.products AS p
 JOIN northwind.`order details` AS od
+ON p.productID = od.productID
 WHERE od.Quantity < 2 AND p.UnitsInStock > 120;
-i. 125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
-   125	1	Rhnbru Klosterbier
-   123	1	Boston Crab Meat
+i. 123	1	Boston Crab Meat
